@@ -24,4 +24,11 @@
 <symbol id="checkbox" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 36 32">
+<path d="M1.2 4c0-1.325 1.075-2.4 2.4-2.4h28.8c1.325 0 2.4 1.075 2.4 2.4s-1.075 2.4-2.4 2.4h-28.8c-1.325 0-2.4-1.075-2.4-2.4v0zM1.2 16c0-1.325 1.075-2.4 2.4-2.4h28.8c1.325 0 2.4 1.075 2.4 2.4s-1.075 2.4-2.4 2.4h-28.8c-1.325 0-2.4-1.075-2.4-2.4v0zM1.2 28c0-1.325 1.075-2.4 2.4-2.4h28.8c1.325 0 2.4 1.075 2.4 2.4s-1.075 2.4-2.4 2.4h-28.8c-1.325 0-2.4-1.075-2.4-2.4v0z"></path>
+</symbol>
+<symbol id="icon-close-2" viewBox="0 0 32 32">
+<path fill="#e7e9fc" style="fill: var(--color1, #e7e9fc); stroke: var(--color2, #2e2f42)" opacity="0.1" stroke="#2e2f42" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" d="M31.333 16c0 8.468-6.865 15.333-15.333 15.333s-15.333-6.865-15.333-15.333c0-8.468 6.865-15.333 15.333-15.333s15.333 6.865 15.333 15.333z"></path>
+<path fill="#2e2f42" style="fill: var(--color2, #2e2f42)" d="M21.333 11.741l-1.075-1.075-4.259 4.259-4.259-4.259-1.075 1.075 4.259 4.259-4.259 4.259 1.075 1.075 4.259-4.259 4.259 4.259 1.075-1.075-4.259-4.259 4.259-4.259z"></path>
+</symbol>
 </defs></svg>
