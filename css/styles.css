@@ -228,14 +228,14 @@ a {
 
 .header-contact-list {
   display: none;
-  gap: 40px;
+  gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .header-contact-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 8px;
     margin-left: 88px;
   }
 }
@@ -284,6 +284,7 @@ a {
 
 @media screen and (min-width: 1158px) {
   .header-contact-item {
+    margin-bottom: 8px;
   }
 }
 
