@@ -282,7 +282,7 @@ a {
 }
 .menu-svg-icon {
 }
-.mob-menu-header {
+.mob-menu-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1256,6 +1256,8 @@ a {
 
 @media screen (min-width: 1158px) {
   .modal {
+    width: 408px;
+    height: 584px;
   }
 }
 .modal-close {
