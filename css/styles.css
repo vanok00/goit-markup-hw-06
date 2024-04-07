@@ -85,11 +85,13 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 40px;
+  /* width: 320px;
+  height: 56px; */
 }
 @media screen and(max-width: 767px) {
   .header-container {
-    width: 320px;
-    height: 56px;
+    /* width: 768px;
+    height: 72px; */
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -103,13 +105,13 @@ a {
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
+    /* width: 1440px;
+    height: 72px; */
   }
 }
 
 @media screen and(min-width: 1158px) {
   .header-container {
-    width: 1440px;
-    height: 72px;
   }
 }
 
@@ -557,6 +559,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -567,13 +570,14 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 36px;
     /* padding: 112px 136px 144px; */
   }
 }
 
 @media screen and (min-width: 1158px) {
   .solutions-title {
-    font-size: 56px;
+    margin-bottom: 51px;
   }
 }
 
@@ -582,7 +586,6 @@ a {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
-  padding: 16px 32px;
   border-radius: 4px;
   width: 169px;
   height: 56px;
@@ -603,7 +606,6 @@ a {
 
 @media screen and (min-width: 1158px) {
   .solutions-btn {
-    margin-top: 32px;
   }
 }
 
@@ -740,9 +742,6 @@ a {
   background-color: #f4f4fd;
   padding-top: 120px 0;
   text-align: center;
-
-  /* width: 320px;
-  height: 2232px; */
 }
 
 .our-team-title {
@@ -916,6 +915,9 @@ a {
 
 /* <!-- SECTION 4 --> */
 
+.pictures {
+  width: 100%;
+}
 .our-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
