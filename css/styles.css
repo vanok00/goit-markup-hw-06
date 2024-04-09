@@ -2,8 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  max-width: 1440px;
-  height: 3300px;
 }
 
 .visually-hidden {
@@ -28,10 +26,14 @@ h6,
 p {
   margin: 0;
 }
+picture {
+  max-width: 100%;
+}
 
 img {
   display: block;
   height: auto;
+  max-width: 100%;
 }
 
 ul {
@@ -77,6 +79,11 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   padding-top: 16px;
   padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
 }
 .header-container {
   display: flex;
@@ -214,10 +221,15 @@ a {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -10px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+}
+@media screen and (min-width: 1158px) {
+  .header-menu-linkf::after {
+    bottom: -22px;
+  }
 }
 
 .header-contact {
@@ -297,7 +309,9 @@ a {
 @media screen and (min-width: 768px) {
   .header-contact-link {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -355,8 +369,8 @@ a {
   position: fixed;
   background: #fff;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding-left: 16px;
   padding-top: 24px;
   padding-right: 24px;
@@ -399,7 +413,7 @@ a {
 .mob-menu-linkf {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: #404bbf;
 }
@@ -503,9 +517,7 @@ a {
   background-position: center;
   background-size: cover;
   padding-top: 72px;
-  padding-right: 44px;
-  padding-bottom: 200px;
-  padding-left: 60px;
+  padding-bottom: 72px;
 }
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -526,7 +538,6 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url(../responsive-img-768/photo0-tab.jpg);
-    width: 768px;
     padding-bottom: 112px;
     padding-top: 112px;
   }
@@ -550,7 +561,7 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    max-width: 1440px;
+
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -571,11 +582,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
+  /* width: 320px; */
 }
 @media screen and (min-width: 768px) {
   .menu-solutions {
-    width: 768px;
+    /* width: 768px; */
   }
 }
 
@@ -659,7 +670,15 @@ a {
 /* ==================SECTION-2================================= */
 
 .menu {
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 99px;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 96px 16px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .menu-items {
@@ -688,19 +707,17 @@ a {
 }
 
 .main-menu-item {
-  width: 264px;
-  height: 112px;
 }
 
 @media screen and (min-width: 768px) {
   .main-menu-item {
-    width: calc(100% - 24px) / 2;
+    width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .main-menu-item {
-    width: calc(100%-24px * 3) / 4;
+    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -769,14 +786,15 @@ a {
 /* ==============SECTION-3==================== */
 
 .team {
+  background-color: #f4f4fd;
+  padding-top: 96px;
+  padding-right: 16px;
+  padding-bottom: 96px;
+  padding-left: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .team {
-    padding-top: 93px;
-    padding-right: 92px;
-    padding-bottom: 99px;
-    padding-bottom: 124px;
   }
 }
 
@@ -785,7 +803,6 @@ a {
   }
 }
 .our-team {
-  background-color: #f4f4fd;
   padding-top: 120px 0;
   text-align: center;
   width: 320px;
@@ -850,7 +867,7 @@ a {
 }
 
 .our-team-person {
-  width: 264px;
+  /* width: 264px; */
 }
 @media screen and (min-width: 768px) {
   .our-team-person {
@@ -872,15 +889,16 @@ a {
 }
 
 .persons {
-  display: flex;
   align-items: center;
-  flex-direction: column;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .persons {
-    margin-bottom: 72px;
   }
 }
 
@@ -899,7 +917,6 @@ a {
   color: #2e2f42;
   text-align: center;
   margin-bottom: 8px;
-  padding-top: 28px;
 }
 @media screen and (min-width: 768px) {
   .our-team-name {
@@ -918,6 +935,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1014,12 +1032,8 @@ a {
 .our-portfolio-list {
   display: flex;
   flex-direction: column;
-  gap: 72px;
   justify-content: center;
-
   align-items: center;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 @media screen and (min-width: 768px) {
@@ -1044,6 +1058,7 @@ a {
 
 .our-portfolio-item {
   background-color: #fff;
+  margin-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
   .our-portfolio-item {
@@ -1069,11 +1084,6 @@ a {
   transform: translateY(0);
 }
 
-.our-portfolio-list:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .apps {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -1086,7 +1096,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .apps {
-    padding: 0px 0px 32px 0px;
+    padding: 32px 0px 32px 16px;
     align-items: left;
   }
 }
@@ -1133,9 +1143,15 @@ a {
   color: #2e2f42;
   margin-bottom: 8px;
   text-align: left;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .our-portfolio-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1185,6 +1201,10 @@ a {
     flex-wrap: nowrap;
     align-items: baseline;
     width: 1158px;
+    /* padding-top: 96px;
+    padding-right: 164px;
+    padding-bottom: 87px;
+    padding-left: 108px; */
   }
 }
 .footerdiv {
@@ -1192,7 +1212,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 72px;
+
   max-width: 264px;
 }
 @media screen and (max-width: 767px) {
@@ -1201,9 +1221,17 @@ a {
     align-items: center;
   }
 }
+@media screen and (max-width: 1157px) {
+  .footerdiv {
+    margin-bottom: 72px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .footerdiv {
+    align-items: start;
+    justify-content: start;
+    margin-right: 24px;
   }
 }
 
@@ -1255,6 +1283,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .footer-logo {
+    justify-content: start;
   }
 }
 
